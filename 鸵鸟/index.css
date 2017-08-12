@@ -1,0 +1,64 @@
+@charset "GB2312";
+/* CSS Document */
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    #photosphere {
+      width: 100%;
+      height: 100%;
+    }
+
+    .psv-button.custom-button {
+      font-size: 22px;
+      line-height: 20px;
+    }
+
+    /*my write*/
+    .psv-navbar{ display:none;}
+
+
+    /*load 加载*/
+    #loadBox{ display:block; width:100%; height:100%; position:fixed; top:0; left:0; background:#2e302f url(pic_BG.gif.jpg)/*tpa=http://projects.chinaflamingo.com/hr/images/pic_BG.gif*/; background-size:100%;  z-index: 1000; transition:3s all ease; -webkit-transition:3s all ease; }
+    .penAnimate{ animation:loadAnimate 1s infinite;  -webkit-animation:loadAnimate 1s infinite;}
+    #loadBox img{ margin:0 auto; display:block; border:none;}
+    .load_text{ padding-top:15%; padding-bottom:27%; text-align: center;}
+    .load_animate{ position:relative; height:30%;}
+        .bird{ position:absolute;top:-35%; left:27%; width:46%; z-index:1;}
+        .loadBg{ position:relative; margin:0 auto; overflow:hidden; width:160px; height:30px; background:url(loading_bg.png)/*tpa=http://projects.chinaflamingo.com/hr/images/loading_bg.png*/ top center no-repeat; background-size:100%; transition: 7s all ease-out; -webkit-transition: 7s all ease-out;}
+        .loadBg #pen{ position:absolute; left:80%; bottom:0px; width:30px; /*transition:0.5s all ease; -webkit-transition:0.6s all ease;*/}
+        .penAnimate{animation:loadAnimate 1s infinite;  -webkit-animation:loadAnimate 1s infinite;}
+        @keyframes loadAnimate{
+          0   { left:80%;}
+          50% { left:20%;}
+          100%{ left:80%;}
+        }    
+    #startBtn{ margin:0 auto; margin-top:20%; background:url(loadingBtn.png)/*tpa=http://projects.chinaflamingo.com/hr/images/loadingBtn.png*/ center no-repeat; background-size:100%; width:40%; height:113px; line-height:113px; text-align:center; color:#fff}
+
+    /*友情提示*/
+    #prompt{ display:block; position:fixed; left:0; top:0; width:100%; height:100%; z-index:999; background:url(ico.png)/*tpa=http://projects.chinaflamingo.com/hr/images/ico.png*/ no-repeat center; background-size:20%;}
+    #prompt div{ background:url(bg_000.png)/*tpa=http://projects.chinaflamingo.com/hr/images/bg_000.png*/;}
+
+    /*弹出框*/
+    #pop{ display:block; opacity:0; position:fixed; left:0; top:0; width:90%; height:100%; padding:0 5%; background:url(bg_000.png)/*tpa=http://projects.chinaflamingo.com/hr/images/bg_000.png*/; text-align:center;  z-index:999; color:#fff; display:block; transition:0.3s all ease; -webkit-transition:0.3s all ease;}
+    #pop input{  outline:none; background:none; border:0; border:none; display:block; font-size:20px;}
+    #pop .popInner{ position:relative; display:block; border:none; width:100%; min-height:10%; /*background:url(../images/pop_bg.jpg) no-repeat top; background-size:100%;*/ }
+    #pop .btnClose{ position:absolute; right:-10px; top:-10px; width:10%; z-index:3;}
+    #pop form{ position:absolute; top:29%; left:0; padding-top:50px; width:100%; display:none;}
+    #pop form div{ position:relative; width:100%; overflow: hidden; }
+    #pop form label{ width:30%; padding-left:10%; padding-top:5px; display:block; float:left; text-align:left; opacity:0;}
+    #pop form input{ position:absolute; top:50%; left:40%; color:#fff; padding:0 2%; height:30px; line-height:30px; display:block; width:50%; margin-top:-15px;}
+    #pop form input[type="button"]{ border:20%; width:74%; border:none; background:#ff9900; color:#fff; margin-top:8%; outline:none; border:none; -webkit-appearance: none;}
+    #pop form .btn_submit{ margin-top:3.2%;}
+
+    #pop #applyJob{ display:none; position:absolute; bottom:13%; left:38%; width:28%; z-index:10000}
+    /*nav*/
+    #navbtn{ display:block; position:fixed; top:0; left:0; z-index:997}
+    #nav{ display:none; position:fixed; top:0; left:0; width:100%; height:100%; /*background:url(../images/bg_000.png)*/; z-index:998; color:#fff; transition:0.5s all ease-out; -webkit-transition: 0.5s all ease-out;}
+    #nav img{ border:0; border:none; display:block; margin:0; padding-top:0}
+    #nav .navInner{ position:relative; width:52%; height:100%;}
+    #nav .btnClose{ position:absolute; right:10px; top:10px;  width:10%; z-index:999}

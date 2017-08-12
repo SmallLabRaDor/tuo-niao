@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>欢迎进入红鹤的大脑</title>
+<meta name="description" content="本脑过于激情，请您系好安全带" />
+<link rel="stylesheet" href="photo-sphere-viewer.css" tppabs="http://projects.chinaflamingo.com/hr/css/photo-sphere-viewer.css">
+<link rel="stylesheet" href="index.css" tppabs="http://projects.chinaflamingo.com/hr/css/index.css">
+</head>
+<body>
+<section style=" display:none; width:70%; height:150px; background:#000; color:#fff; position:fixed; top:0; right:0; z-index:100000" id="showText">
+<img src="pic_theOpening.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/pic_theOpening.jpg"/>
+<img src="pic_history.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/pic_history.jpg"/>
+<img src="pic_chuai.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/pic_chuai.jpg"/>
+<img src="pic_class.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/pic_class.jpg"/>
+<img src="pic_think.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/pic_think.jpg"/>
+<img src="pic_library.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/pic_library.jpg"/>
+<img src="pic_apartment.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/pic_apartment.jpg"/>
+<img src="pic_tea.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/pic_tea.jpg"/>
+<img src="pic_recruitment.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/pic_recruitment.jpg"/>
+</section>
+<nav id="nav">
+<div class="navInner">
+<div class="btnClose" onclick="navHide()"><img src="btn_close.png" tppabs="http://projects.chinaflamingo.com/hr/images/btn_close.png" width="100%"/></div>
+<div id="btnBox">
+<img src="nav_01.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/nav_01.jpg" width="100%">
+<img src="nav_02.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/nav_02.jpg" width="100%" class="1">
+<img src="nav_03.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/nav_03.jpg" width="100%" class="2">
+<img src="nav_04.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/nav_04.jpg" width="100%" class="3">
+<img src="nav_05.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/nav_05.jpg" width="100%" class="4">
+<img src="nav_06.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/nav_06.jpg" width="100%" class="5">
+<img src="nav_07.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/nav_07.jpg" width="100%" class="6">
+<img src="nav_08.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/nav_08.jpg" width="100%" class="7">
+<img src="nav_09.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/nav_09.jpg" width="100%" class="8">
+<img src="nav_10.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/nav_10.jpg" width="100%" class="9">
+<img src="nav_11.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/nav_11.jpg" width="100%">
+</div>
+</div>
+</nav>
+<section id="navbtn" onclick="navShow()">
+<img src="menu.png" tppabs="http://projects.chinaflamingo.com/hr/images/menu.png" width="50"/>
+</section>
+<section id="loadBox">
+<div class="load_text"><img src="loadText.png" tppabs="http://projects.chinaflamingo.com/hr/images/loadText.png" width="34%" /></div>
+<div class="load_animate">
+<img src="loading.gif" tppabs="http://projects.chinaflamingo.com/hr/images/loading.gif" class="bird">
+<div class="loadBg" id="loadBg">
+<img src="pic_pen.png" tppabs="http://projects.chinaflamingo.com/hr/images/pic_pen.png" class="pen" id="pen">
+</div>
+</div>
+<div class="no" id="startBtn">1%</div>
+</section>
+<section id="prompt" onclick="this.style.display='none'">
+<div>
+<img src="icoslo.png" tppabs="http://projects.chinaflamingo.com/hr/images/icoslo.png" width="100%">
+</div>
+</section>
+<section id="pop">
+<div class="popInner" id="popInner">
+<div class="btnClose" id="btnClose" onclick="popHide()">
+<img src="btn_close.png" tppabs="http://projects.chinaflamingo.com/hr/images/btn_close.png" width="100%"/>
+</div>
+<form id="joinUs">
+<div>
+<img src="input01.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/input01.jpg" width="100%">
+<input type="text" />
+</div>
+<div>
+<img src="input02.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/input02.jpg" width="100%">
+<input type="text"/>
+</div>
+<div>
+<img src="input03.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/input03.jpg" width="100%">
+<input type="text"/>
+</div>
+<div>
+<img src="input04.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/input04.jpg" width="100%">
+<input type="text"/>
+</div>
+<div class="btn_submit" id="submit">
+<img src="btn_submit.png" tppabs="http://projects.chinaflamingo.com/hr/images/btn_submit.png" width="25%">
+</div>
+</form>
+<div id="applyJob" onclick="popShow('img01.jpg'/*tpa=http://projects.chinaflamingo.com/hr/img01.jpg*/)"><img src="applyJob.png" tppabs="http://projects.chinaflamingo.com/hr/images/applyJob.png" width="100%" /></div>
+<img src="img01-1.jpg" tppabs="http://projects.chinaflamingo.com/hr/images/img01.jpg" width="100%" id="innerImg">
+</div>
+<img src="succed.png" tppabs="http://projects.chinaflamingo.com/hr/images/succed.png" id="succedImg" width="50%" style="position:absolute; top:30%; left:50%; margin-left:-25%; display:none">
+</section>
+<div id="photosphere" onclick=" "></div>
+<audio id="audio" loop="" autoplay="autoplay" src="music.mp3" tppabs="http://projects.chinaflamingo.com/hr/Music/music.mp3"></audio>
+<script src="three.min.js" tppabs="http://projects.chinaflamingo.com/hr/js/three.min.js"></script>
+<script src="uevent.min.js" tppabs="http://projects.chinaflamingo.com/hr/js/uevent.min.js"></script>
+<script src="doT.min.js" tppabs="http://projects.chinaflamingo.com/hr/js/doT.min.js"></script>
+<script src="D.min.js" tppabs="http://projects.chinaflamingo.com/hr/js/D.min.js"></script>
+<script src="uevent.min.js" tppabs="http://projects.chinaflamingo.com/hr/js/uevent.min.js"></script>
+<script src="photo-sphere-viewer.js" tppabs="http://projects.chinaflamingo.com/hr/js/photo-sphere-viewer.js"></script>
+<script src="index.js" tppabs="http://projects.chinaflamingo.com/hr/js/index.js"></script>
+<script src="jweixin-1.0.0.js" tppabs="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+ wx.config({
+    //debug: true,
+    appId: 'wxcefa60ed039de9b8',
+    timestamp: 1501227249,
+    nonceStr: 'p5vqmlr4J2fWAqYA',
+    signature: 'c12760e6b81bf90fe21654f4e907e9666b9fb5f8',
+    jsApiList: [
+        'checkJsApi',
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage',
+        'onMenuShareQQ',
+        'onMenuShareWeibo',
+        'hideMenuItems',
+        'showMenuItems',
+        'hideAllNonBaseMenuItem',
+        'showAllNonBaseMenuItem',
+        'translateVoice',
+        'startRecord',
+        'stopRecord',
+        'onRecordEnd',
+        'playVoice',
+        'pauseVoice',
+        'stopVoice',
+        'uploadVoice',
+        'downloadVoice',
+        'chooseImage',
+        'previewImage',
+        'uploadImage',
+        'downloadImage',
+        'getNetworkType',
+        'openLocation',
+        'getLocation',
+        'hideOptionMenu',
+        'showOptionMenu',
+        'closeWindow',
+        'scanQRCode',
+        'chooseWXPay',
+        'openProductSpecificView',
+        'addCard',
+        'chooseCard',
+        'openCard'
+    ]
+  });
+  
+   wx.ready(function () {
+        wx.onMenuShareAppMessage({
+            title: '欢迎进入红鹤的大脑', // 分享标题
+            desc: '本脑过于激情，请您系好安全带', // 分享描述
+            link: 'index.php.htm'/*tpa=http://projects.chinaflamingo.com/hr/index.php*/, // 分享链接
+            imgUrl: 'share.png'/*tpa=http://projects.chinaflamingo.com/hr/images/share.png*/, // 分享图标
+            type: '', // 分享类型,music、video或link，不填默认为link
+            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+            success: function () { 
+                // 用户确认分享后执行的回调函数
+            },
+            cancel: function () { 
+                // 用户取消分享后执行的回调函数
+            }
+        });
+        wx.onMenuShareTimeline({
+            title: '欢迎进入红鹤的大脑', // 分享标题
+            link: 'index.php.htm'/*tpa=http://projects.chinaflamingo.com/hr/index.php*/, // 分享链接
+            imgUrl: 'share.png'/*tpa=http://projects.chinaflamingo.com/hr/images/share.png*/, // 分享图标
+            success: function () { 
+                // 用户确认分享后执行的回调函数
+            },
+            cancel: function () { 
+                // 用户取消分享后执行的回调函数
+            }
+        });
+		wx.onMenuShareQQ({
+			title: '欢迎进入红鹤的大脑', // 分享标题
+			desc: '本脑过于激情，请您系好安全带', // 分享描述
+			link: 'index.php.htm'/*tpa=http://projects.chinaflamingo.com/hr/index.php*/, // 分享链接
+			imgUrl: 'share.png'/*tpa=http://projects.chinaflamingo.com/hr/images/share.png*/, // 分享图标
+			success: function () { 
+			   // 用户确认分享后执行的回调函数
+			},
+			cancel: function () { 
+			   // 用户取消分享后执行的回调函数
+			}
+		});
+		wx.onMenuShareWeibo({
+			title: '欢迎进入红鹤的大脑', // 分享标题
+			desc: '本脑过于激情，请您系好安全带', // 分享描述
+			link: 'index.php.htm'/*tpa=http://projects.chinaflamingo.com/hr/index.php*/, // 分享链接
+			imgUrl: 'share.png'/*tpa=http://projects.chinaflamingo.com/hr/images/share.png*/, // 分享图标
+			success: function () { 
+			   // 用户确认分享后执行的回调函数
+			},
+			cancel: function () { 
+				// 用户取消分享后执行的回调函数
+			}
+		});			
+   });
+</script>
+</body>
+</html>
